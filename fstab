@@ -1,0 +1,8 @@
+tmpfs           /tmp            tmpfs   defaults,size=30M    0       0
+tmpfs           /var/log        tmpfs   defaults,noatime,nosuid,mode=0755,size=100m     0       0
+proc            /proc           proc    defaults          0       0
+/dev/mmcblk0p1  /boot           vfat    defaults          0       2
+/dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+//192.168.1.10/camera /home/gary/capture/pics cifs username=xxxx,password=xxxx,iocharset=utf8,uid=1001,gid=1004,sec=ntlm 0 0
