@@ -45,6 +45,11 @@ def capture_image(pic_dir) :
         attemptcount = attemptcount + 1
         print 'wait: ' + str(attemptcount)
         if(attemptcount >= 10) :
+            print 'Start camera:\n'
+            cam_start = ["bash","/home/gary/capture/camera_start.sh"]
+            proc = subprocess.Popen(cam_start,stdout=subprocess.PIPE)
+            cam_list = proc.stdout.read()
+            print cam_list
 	    return "FILE_EMPTY"
         
     #print "DIR_LOC: " + str(dirloc)
@@ -151,7 +156,9 @@ time.sleep(2)
 status = subprocess.call(argsfocusman)
 time.sleep(2)
 status = subprocess.call(argsfocus)
-
+time.sleep(2)
+status = subprocess.call(argsfocusman2)
+time.sleep(2)
 print 'Camera ready!'
 
 while 1:
