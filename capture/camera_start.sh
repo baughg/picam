@@ -7,7 +7,7 @@ sudo ptpcam --chdk='mode 1'
 sleep 2
 sudo ptpcam --chdk="lua set_mf(1)"
 sleep 2
-sudo ptpcam --chdk="lua set_aflock(1)"
+#sudo ptpcam --chdk="lua set_aflock(1)"
 sleep 2
 sudo ptpcam --chdk="lua set_focus(1000)"
 sleep 2
