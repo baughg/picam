@@ -12,8 +12,8 @@ print 'Running SouthWest camera'
 
 argsproc = ["vidcap"]   
 run_count = 1
-server_ip = '192.168.1.10'
-server_port = 17213
+server_ip = '192.168.0.14'
+server_port = 17212
 videodir = '/home/gary/testvid/'
 #videodir = 'd:\\Panda\\p\\'
 videodir0 = videodir + 'video0/'
